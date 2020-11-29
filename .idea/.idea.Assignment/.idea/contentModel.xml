@@ -15,13 +15,10 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
-        <e p="README.md" t="Include" />
         <e p="src" t="Include">
-          <e p="comparers" t="Include" />
           <e p="constants" t="Include">
             <e p="Constants.cs" t="Include" />
           </e>
-          <e p="delegates" t="Include" />
           <e p="Model" t="Include">
             <e p="CustomerInformation.cs" t="Include" />
           </e>
@@ -30,6 +27,9 @@
             <e p="output.txt" t="Include" />
             <e p="pipe.txt" t="Include" />
             <e p="space.txt" t="Include" />
+          </e>
+          <e p="sort" t="Include">
+            <e p="Sort.cs" t="Include" />
           </e>
         </e>
       </e>

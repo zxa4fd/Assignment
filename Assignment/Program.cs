@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Assignment.sort;
 
 namespace Assignment
 {
@@ -10,9 +12,15 @@ namespace Assignment
         static void Main(string[] args)
         {
 
+            int[] A = {2, 1, 3};
+            List<int> B = new List<int>(A);
+            Sort.insertionSort(B);
+            Console.WriteLine();
+            /*
             List<CustomerInformation> parsedCustomerInformation =
                 ParseCustomerInformation("pipe.txt", Constants.DELIMETER_PIPE);
-            
+                */
+
             // Use String.Format for output
 
         }
