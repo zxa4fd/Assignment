@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection.Metadata;
 using Assignment.sort;
 
 namespace Assignment
@@ -12,12 +13,12 @@ namespace Assignment
         static void Main(string[] args)
         {
             
-            /*
+            
             List<CustomerInformation> parsedCustomerInformation =
                 ParseCustomerInformation("pipe.txt", Constants.DELIMETER_PIPE);
-                */
-
+            Sort.insertionSort(parsedCustomerInformation, new GenderComparator());
             // Use String.Format for output
+            Console.WriteLine("test");
 
         }
 
