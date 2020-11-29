@@ -11,11 +11,7 @@ namespace Assignment
     {
         static void Main(string[] args)
         {
-
-            int[] A = {2, 1, 3};
-            List<int> B = new List<int>(A);
-            Sort.insertionSort(B);
-            Console.WriteLine();
+            
             /*
             List<CustomerInformation> parsedCustomerInformation =
                 ParseCustomerInformation("pipe.txt", Constants.DELIMETER_PIPE);
@@ -30,13 +26,12 @@ namespace Assignment
             List<CustomerInformation> parsedData = new List<CustomerInformation>();
             string filePath = Directory.GetCurrentDirectory() + "\\resources\\" + fileName;
             string line = String.Empty;
-            // 3-3-1985 -> mm//dd//yyyy -> ##/##/#### 
+            // 3-3-1985 is mm//dd//yyyy -> ##/##/#### 
             // Create a Stream using Filepath
             using (StreamReader file = new StreamReader(filePath))
             {
                 while ((line = file.ReadLine()) != null)
                 {
-                    Console.WriteLine(line);
                     List<string> ls = line.Split(delimeter).ToList();
                     CustomerInformation customerInformation = new CustomerInformation();
                     customerInformation.LastName = ls[0];
@@ -46,16 +41,15 @@ namespace Assignment
                     customerInformation.FavoriteColor = ls[4];
                     customerInformation.DateOfBirth = ls[5].Replace("-", "/");
                     parsedData.Add(customerInformation);
-
-                    Console.WriteLine("Date of Birth: " + customerInformation.DateOfBirth);
                 }
             }
 
             return parsedData;
         }
-        
-        
+
+        public static void PrintFirstCriteria()
+        {
+            
+        }
     }
-    
-    
 }
