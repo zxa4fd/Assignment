@@ -25,6 +25,28 @@ namespace Assignment.sort
                 list[j + 1] = currentItem;
             }
         }
+        
+        public static void shellSort<T>(List<T> list, Comparer<T> comparer)
+        {
+            int listLength = list.Count;
+
+            for (int gap = listLength / 2; gap > 0; gap /= 2)
+            {
+                for (int i = gap; i < listLength; i++)
+                {
+                    T currentItem = list[i];
+                    int j = i;
+                    while (j >= gap  && comparer.Compare(currentItem, list[j - gap]) == -1)
+                    {
+                        list[j] = list[j - gap];
+                        j -= gap;
+                    }
+                    list[j] = currentItem;
+                }
+            }
+        }
     }
+    
+    
 
 }
