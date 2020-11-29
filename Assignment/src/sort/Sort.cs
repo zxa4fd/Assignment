@@ -43,11 +43,20 @@ namespace Assignment.sort
 
     public class LastNameComparatorAsc : Comparer<CustomerInformation>
     {
-        public override int Compare(CustomerInformation? x, CustomerInformation? y)
+
+        public override int Compare(CustomerInformation x, CustomerInformation y)
         {
-            throw new NotImplementedException();
+            return x.LastName.CompareTo(y.LastName);
         }
     }
     
+    public class LastNameComparatorDesc : Comparer<CustomerInformation>
+    {
+
+        public override int Compare(CustomerInformation x, CustomerInformation y)
+        {
+            return y.LastName.CompareTo(x.LastName);
+        }
+    }
     
 }

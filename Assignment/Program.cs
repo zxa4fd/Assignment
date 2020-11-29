@@ -15,9 +15,12 @@ namespace Assignment
         {
             List<CustomerInformation> parsedCustomerInformation = 
                 CustomerInfoParser.ParseCustomerInformation("pipe.txt", Constants.DELIMETER_PIPE);
-            Sort.insertionSort(parsedCustomerInformation, new GenderComparator());
+            Sort.insertionSort(parsedCustomerInformation, new LastNameComparatorDesc());
             // Use String.Format for output
-            Console.WriteLine("test");
+            foreach (var customerInformation in parsedCustomerInformation)
+            {
+                Console.WriteLine(customerInformation.FirstName + customerInformation.LastName);
+            }
 
         }
 
