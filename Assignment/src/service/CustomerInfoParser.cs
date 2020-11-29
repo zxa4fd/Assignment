@@ -12,8 +12,6 @@ namespace Assignment.utils
             List<CustomerInformation> parsedData = new List<CustomerInformation>();
             string filePath = Directory.GetCurrentDirectory() + @"\resources\" + fileName;
             string line = String.Empty;
-            // 3-3-1985 is mm//dd//yyyy -> ##/##/#### 
-            // Create a Stream using Filepath
             using (StreamReader file = new StreamReader(filePath))
             {
                 while ((line = file.ReadLine()) != null)
