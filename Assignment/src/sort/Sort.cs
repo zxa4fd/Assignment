@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Reflection.Metadata;
+using System.Security;
+using Microsoft.VisualBasic;
 
 namespace Assignment.sort
 {
@@ -59,4 +61,14 @@ namespace Assignment.sort
         }
     }
     
+    public class DateComparatorAsc : Comparer<CustomerInformation>
+    {
+        public override int Compare(CustomerInformation x, CustomerInformation y)
+        {
+            string firstDateString = x.DateOfBirth;
+            string secondDateString = y.DateOfBirth;
+            return -2;
+
+        }
+    }
 }

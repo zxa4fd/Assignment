@@ -21,4 +21,14 @@ namespace Assignment.utils
             }
         }
     }
+
+    public class DateStringFormatter
+    {
+        public static string parseDateString(string stringParameter)
+        {
+            string[] date = stringParameter.Split("/");
+            string returnString = date[1] + "/" + date[0] + "/" + date[2];
+            return returnString;
+        }
+    }
 }

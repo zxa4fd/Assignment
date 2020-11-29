@@ -21,7 +21,6 @@ namespace Assignment
             {
                 Console.WriteLine(customerInformation.FirstName + customerInformation.LastName);
             }
-
         }
 
        
