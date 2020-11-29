@@ -11,11 +11,8 @@ namespace Assignment.sort
     {
         public static void insertionSort<T>(List<T> list, Comparer<T> comparer)
         {
-            int Counte = list.Count;
-            Console.WriteLine(Counte);
             for (int i = 1; i < list.Count; i++)
             {
-                
                 T currentItem = list[i];
                 int j = i - 1;
                 while (j >= 0 && comparer.Compare(currentItem, list[j]) == -1)
@@ -35,12 +32,22 @@ namespace Assignment.sort
             if ("F".Equals(x.Gender, StringComparison.InvariantCultureIgnoreCase) 
                 || "Female".Equals(x.Gender, StringComparison.InvariantCultureIgnoreCase))
             {
-                return -1;
+                return 1;
             }
             else
             {
-                return 1;
+                return -1;
             }
         }
     }
+
+    public class LastNameComparatorAsc : Comparer<CustomerInformation>
+    {
+        public override int Compare(CustomerInformation? x, CustomerInformation? y)
+        {
+            throw new NotImplementedException();
+        }
+    }
+    
+    
 }

@@ -36,11 +36,14 @@
             <e p="pipe.txt" t="Include" />
             <e p="space.txt" t="Include" />
           </e>
+          <e p="service" t="Include">
+            <e p="CustomerInfoParser.cs" t="Include" />
+          </e>
           <e p="sort" t="Include">
             <e p="Sort.cs" t="Include" />
           </e>
           <e p="utils" t="Include">
-            <e p="DateParserUtil.cs" t="Include" />
+            <e p="Utils.cs" t="Include" />
           </e>
         </e>
       </e>
