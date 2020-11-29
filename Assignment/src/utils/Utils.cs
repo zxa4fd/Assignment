@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace Assignment.utils
 {
@@ -29,6 +30,20 @@ namespace Assignment.utils
             string[] date = stringParameter.Split("/");
             string returnString = date[1] + "/" + date[0] + "/" + date[2];
             return returnString;
+        }
+    }
+
+    public class TextOutputUtil
+    {
+        public void printToPath()
+        {
+            using (System.IO.StreamWriter file =
+                new System.IO.StreamWriter(Directory.GetCurrentDirectory() + @"\output\pipe-output.txt", true))
+            {
+                string ab = string.Format("{0:-10} | {1:-10}", "afdsafdasdfasf", "abnbnbnb");
+                file.WriteLine(ab);
+                
+            }
         }
     }
 }

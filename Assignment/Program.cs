@@ -16,7 +16,7 @@ namespace Assignment
             
             // Command to run .\Assignment `/resources/pipe.txt` "|"
             List<CustomerInformation> parsedCustomerInformation = 
-                CustomerInfoParser.ParseCustomerInformation("pipe.txt", Constants.DELIMETER_PIPE);
+                CustomerInfoParser.ParseCustomerInformation(@"\resources\pipe.txt", Constants.DELIMETER_PIPE);
             Sort.insertionSort(parsedCustomerInformation, new DateOfBirthComparatorAsc());
             // Use String.Format for output
             
@@ -25,13 +25,13 @@ namespace Assignment
                 Console.WriteLine(customerInformation.FirstName + customerInformation.LastName + customerInformation.DateOfBirth);
             }*/
             
+            
+            
         }
-
-       
-
+        
         public static void PrintFirstCriteria()
         {
-            
+                        
         }
     }
 }
