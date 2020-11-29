@@ -13,15 +13,17 @@ namespace Assignment
     {
         static void Main(string[] args)
         {
+            
+            // Command to run .\Assignment `/resources/pipe.txt` "|"
             List<CustomerInformation> parsedCustomerInformation = 
                 CustomerInfoParser.ParseCustomerInformation("pipe.txt", Constants.DELIMETER_PIPE);
             Sort.insertionSort(parsedCustomerInformation, new DateOfBirthComparatorAsc());
             // Use String.Format for output
             
-            foreach (var customerInformation in parsedCustomerInformation)
+            /*foreach (var customerInformation in parsedCustomerInformation)
             {
                 Console.WriteLine(customerInformation.FirstName + customerInformation.LastName + customerInformation.DateOfBirth);
-            }
+            }*/
             
         }
 
