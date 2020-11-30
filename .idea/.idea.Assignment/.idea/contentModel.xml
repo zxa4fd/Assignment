@@ -31,7 +31,10 @@
             <e p="CustomerInformation.cs" t="Include" />
           </e>
           <e p="service" t="Include">
+            <e p="CommaCustomerInfoParser.cs" t="Include" />
             <e p="CustomerInfoParser.cs" t="Include" />
+            <e p="PipeCustomerInfoParser.cs" t="Include" />
+            <e p="SpaceCustomerInfoParser.cs" t="Include" />
           </e>
           <e p="sort" t="Include">
             <e p="Comparers.cs" t="Include" />

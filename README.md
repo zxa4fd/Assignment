@@ -1,10 +1,5 @@
 ### Running the Program 
 
-### Assumptions:
-
-It is assumed that the files have a uniform format. (The files provided have different formatting 
-so it was assumed that the formatting was wrong)
-
 #### Step 1
 
 Navigate to *Assignments -> Assignment -> bin -> Debug -> net5.0*
@@ -15,12 +10,11 @@ Place the text file you need to in the *resources* folder.
 
 #### Step 3
 
-Run the following command:
+Run the following command `.\Assignment [FileName] `:
 
 ```powershell
-.\Assignment [FileName] [Delimieter enclosed in quote]
-
-# for example: .\Assignment pipe.txt "|"
+# for example: 
+.\Assignment pipe.txt
 ```
 
 

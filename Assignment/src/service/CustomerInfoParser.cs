@@ -5,29 +5,30 @@ using System.Linq;
 
 namespace Assignment.utils
 {
-    public class CustomerInfoParser
+    public abstract class CustomerInfoParser
     {
-        public static List<CustomerInformation> ParseCustomerInformation(string fileName, string delimeter)
+
+        protected string fileName = "";
+        
+        public abstract CustomerInformation setCustomerInformation(String line);
+        
+        public List<CustomerInformation> ParseCustomerInformation()
         {
             List<CustomerInformation> parsedData = new List<CustomerInformation>();
-            string filePath = Directory.GetCurrentDirectory() + @"\resources\" + fileName ;
+            string filePath = Directory.GetCurrentDirectory() + @"\resources\" + fileName;
             string line = String.Empty;
             using (StreamReader file = new StreamReader(filePath))
             {
                 while ((line = file.ReadLine()) != null)
                 {
-                    List<string> customerInformationLineList = line.Split(delimeter).ToList();
-                    CustomerInformation customerInformation = new CustomerInformation();
-                    customerInformation.LastName = customerInformationLineList[0];
-                    customerInformation.FirstName = customerInformationLineList[1];
-                    customerInformation.MiddleInitial = customerInformationLineList[2];
-                    customerInformation.Gender = GenderParser.parseGender(customerInformationLineList[3]);
-                    customerInformation.FavoriteColor = customerInformationLineList[4];
-                    customerInformation.DateOfBirth = customerInformationLineList[5].Replace("-", "/");
+
+                    CustomerInformation customerInformation = setCustomerInformation(line);
+
                     parsedData.Add(customerInformation);
                 }
             }
             return parsedData;
         }
+
     }
 }

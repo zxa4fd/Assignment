@@ -13,9 +13,8 @@ namespace Assignment
     {
         static void Main(string[] args)
         {
-            List<CustomerInformation> parsedCustomerInformation =
-                CustomerInfoParser.ParseCustomerInformation(args[0], args[1]);
-
+            CustomerInfoParser customerInfoParser = CreateParser(args[0]);
+            List<CustomerInformation> parsedCustomerInformation = customerInfoParser.ParseCustomerInformation();
             SortAndPrintFirstCriteria(parsedCustomerInformation);
             SortAndPrintSecondCriteria(parsedCustomerInformation);
             SortAndPrintThirdCriteria(parsedCustomerInformation);
@@ -42,7 +41,7 @@ namespace Assignment
             Console.WriteLine("lastname descending");
             PrintToConsole(parsedCustomerInformation);
         }
-        
+
         public static void PrintToConsole(List<CustomerInformation> parsedCustomerInformation)
         {
             Console.WriteLine("--------------------------");
@@ -56,6 +55,22 @@ namespace Assignment
             Console.WriteLine();
             Console.WriteLine("--------------------------");
             Console.WriteLine();
+        }
+
+        public static CustomerInfoParser CreateParser(string name)
+        {
+            if ("pipe.txt".Equals(name, StringComparison.InvariantCultureIgnoreCase))
+            {
+                return new PipeCustomerInfoParser();
+            }
+            else if ("space.txt".Equals(name, StringComparison.InvariantCultureIgnoreCase))
+            {
+                return new SpaceCustomerInfoParser();
+            } else if ("comma.txt".Equals(name, StringComparison.InvariantCultureIgnoreCase))
+            {
+                return new CommaCustomerInfoParser();
+            }
+            return null;
         }
     }
 }
