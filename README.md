@@ -6,11 +6,7 @@ Navigate to *Assignments -> Assignment -> bin -> Debug -> net5.0*
 
 #### Step 2
 
-Place the text file you need to in the *resources* folder. 
-
-#### Step 3
-
-Run the following command `.\Assignment [FileName] `:
+Run the following command `.\Assignment [FileName of data to use] `:
 
 ```powershell
 # for example: 
