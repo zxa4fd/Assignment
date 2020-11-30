@@ -11,11 +11,11 @@ namespace Assignment.sort
             if ("F".Equals(x.Gender, StringComparison.InvariantCultureIgnoreCase) 
                 || "Female".Equals(x.Gender, StringComparison.InvariantCultureIgnoreCase))
             {
-                return 1;
+                return -1;
             }
             else
             {
-                return -1;
+                return 0;
             }
         }
     }

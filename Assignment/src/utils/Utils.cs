@@ -10,11 +10,11 @@ namespace Assignment.utils
             string trimmedString = stringParameter.Trim();
             if ("F".Equals(trimmedString, StringComparison.InvariantCultureIgnoreCase))
             {
-                return " Female ";
+                return "Female";
             }
             else if ("M".Equals(trimmedString, StringComparison.InvariantCultureIgnoreCase))
             {
-                return " Male ";
+                return "Male";
             }
             else
             {

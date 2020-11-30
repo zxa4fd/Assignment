@@ -7,10 +7,10 @@ namespace Assignment.utils
 {
     public class CustomerInfoParser
     {
-        public static List<CustomerInformation> ParseCustomerInformation(string pathOfFile, string delimeter)
+        public static List<CustomerInformation> ParseCustomerInformation(string fileName, string delimeter)
         {
             List<CustomerInformation> parsedData = new List<CustomerInformation>();
-            string filePath = Directory.GetCurrentDirectory() + pathOfFile;
+            string filePath = Directory.GetCurrentDirectory() + @"\resources\" + fileName ;
             string line = String.Empty;
             using (StreamReader file = new StreamReader(filePath))
             {

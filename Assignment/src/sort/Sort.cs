@@ -17,7 +17,7 @@ namespace Assignment.sort
             {
                 T currentItem = list[i];
                 int j = i - 1;
-                while (j >= 0 && comparer.Compare(currentItem, list[j]) == -1)
+                while (j >= 0 && comparer.Compare(currentItem, list[j]) < 0)
                 {
                     list[j + 1] = list[j];
                     j--;
@@ -36,7 +36,7 @@ namespace Assignment.sort
                 {
                     T currentItem = list[i];
                     int j = i;
-                    while (j >= gap  && comparer.Compare(currentItem, list[j - gap]) == -1)
+                    while (j >= gap  && comparer.Compare(currentItem, list[j - gap]) < 0)
                     {
                         list[j] = list[j - gap];
                         j -= gap;
