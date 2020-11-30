@@ -31,13 +31,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf0d3305-6ac0-4ad5-a6e3-844be79ff5fc" name="Default Changelist" comment="fixed implementation fo Gender parsing">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Assignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assignment/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/src/service/CommaCustomerInfoParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/src/service/CommaCustomerInfoParser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/src/service/CustomerInfoParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/src/service/CustomerInfoParser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/src/service/PipeCustomerInfoParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/src/service/PipeCustomerInfoParser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment/src/service/SpaceCustomerInfoParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment/src/service/SpaceCustomerInfoParser.cs" afterDir="false" />
-    </list>
+    <list default="true" id="bf0d3305-6ac0-4ad5-a6e3-844be79ff5fc" name="Default Changelist" comment="fixed implementation fo Gender parsing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,6 +120,7 @@
       <workItem from="1606729354303" duration="2755000" />
       <workItem from="1606736536816" duration="2570000" />
       <workItem from="1606739776467" duration="1285000" />
+      <workItem from="1606741389088" duration="153000" />
     </task>
     <task id="LOCAL-00001" summary="added initial `insertionSort`">
       <created>1606591298576</created>
