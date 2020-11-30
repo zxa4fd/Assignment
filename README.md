@@ -20,7 +20,7 @@ Run the following command:
 ```powershell
 .\Assignment [FileName] [Delimieter enclosed in quote]
 
-# .\Assignment pipe.txt "|"
+# for example: .\Assignment pipe.txt "|"
 ```
 
 
