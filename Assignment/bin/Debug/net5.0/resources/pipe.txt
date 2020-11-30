@@ -1,4 +1,4 @@
-Steve | Smith | D | M | Red | 1-12-1985
+﻿Steve | Smith | D | M | Red | 1-12-1985
 Bonk | Radek | S | M | Green | 2-28-1975
 Bouillon | Francis | G | M | Blue | 7-10-1975
 Ace | John | G | M | Blue | 7-11-1975

@@ -11,13 +11,10 @@ namespace Assignment
 {
     class Program
     {
-        private static String staticFileName;
-
         static void Main(string[] args)
         {
-            // Command to run .\Assignment `/resources/pipe.txt` "|"
             List<CustomerInformation> parsedCustomerInformation =
-                CustomerInfoParser.ParseCustomerInformation("pipe.txt", Constants.DELIMETER_PIPE);
+                CustomerInfoParser.ParseCustomerInformation(args[0], args[1]);
 
             SortAndPrintFirstCriteria(parsedCustomerInformation);
             SortAndPrintSecondCriteria(parsedCustomerInformation);
