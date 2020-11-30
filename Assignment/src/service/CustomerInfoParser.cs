@@ -10,7 +10,7 @@ namespace Assignment.utils
 
         protected string fileName = "";
         
-        public abstract CustomerInformation setCustomerInformation(String line);
+        public abstract CustomerInformation SetCustomerInformation(String line);
         
         public List<CustomerInformation> ParseCustomerInformation()
         {
@@ -22,7 +22,7 @@ namespace Assignment.utils
                 while ((line = file.ReadLine()) != null)
                 {
 
-                    CustomerInformation customerInformation = setCustomerInformation(line);
+                    CustomerInformation customerInformation = SetCustomerInformation(line);
 
                     parsedData.Add(customerInformation);
                 }

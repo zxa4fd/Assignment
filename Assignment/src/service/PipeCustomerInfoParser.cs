@@ -13,7 +13,7 @@ namespace Assignment.utils
             fileName = "pipe.txt";
         }
         
-        public override CustomerInformation setCustomerInformation(string line)
+        public override CustomerInformation SetCustomerInformation(string line)
         {
             CustomerInformation customerInformation = new CustomerInformation();
             List<string> customerInformationLineList = line.Split("|").ToList();

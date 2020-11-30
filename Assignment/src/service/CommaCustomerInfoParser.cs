@@ -12,7 +12,7 @@ namespace Assignment.utils
             fileName = "comma.txt";
         }
         
-        public override CustomerInformation setCustomerInformation(string line)
+        public override CustomerInformation SetCustomerInformation(string line)
         {
             List<string> customerInformationLineList = line.Split(",").ToList();
             CustomerInformation customerInformation = new CustomerInformation();

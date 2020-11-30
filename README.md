@@ -2,7 +2,7 @@
 
 #### Step 1
 
-Navigate to *Assignments -> Assignment -> bin -> Debug -> net5.0*
+Navigate to *Assignments /Assignment /bin/Debug/net5.0*
 
 #### Step 2
 
