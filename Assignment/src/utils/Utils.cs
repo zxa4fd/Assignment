@@ -32,18 +32,4 @@ namespace Assignment.utils
             return returnString;
         }
     }
-
-    public class TextOutputUtil
-    {
-        public void printToPath()
-        {
-            using (System.IO.StreamWriter file =
-                new System.IO.StreamWriter(Directory.GetCurrentDirectory() + @"\output\pipe-output.txt", true))
-            {
-                string ab = string.Format("{0:-10} | {1:-10}", "afdsafdasdfasf", "abnbnbnb");
-                file.WriteLine(ab);
-                
-            }
-        }
-    }
 }

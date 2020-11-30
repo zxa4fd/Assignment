@@ -14,5 +14,4 @@ C:\Users\QHTF\Desktop\CSharpProjects\Assignment\Assignment\obj\Debug\net5.0\Assi
 C:\Users\QHTF\Desktop\CSharpProjects\Assignment\Assignment\obj\Debug\net5.0\ref\Assignment.dll
 C:\Users\QHTF\Desktop\CSharpProjects\Assignment\Assignment\obj\Debug\net5.0\Assignment.pdb
 C:\Users\QHTF\Desktop\CSharpProjects\Assignment\Assignment\obj\Debug\net5.0\Assignment.genruntimeconfig.cache
-C:\Users\QHTF\Desktop\CSharpProjects\Assignment\Assignment\bin\Debug\net5.0\src\resources\pipe.txt
 C:\Users\QHTF\Desktop\CSharpProjects\Assignment\Assignment\bin\Debug\net5.0\bin\Debug\net5.0\resources\pipe.txt
